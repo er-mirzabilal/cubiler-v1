@@ -2,6 +2,7 @@ import localFont from "next/font/local";
 import Script from "next/script";
 // import "./globals.css";
 
+// Define the fonts outside the RootLayout function
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -29,7 +30,10 @@ export default function RootLayout({ children }) {
         <link rel="stylesheet" href="/asserts/css/plugins.css" />
         <link rel="stylesheet" href="/asserts/css/common_style.css" />
         <link rel="stylesheet" href="/asserts/css/home1-style.css" />
+      </head>
 
+      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        {children}
         <Script
           src="/asserts/js/jquery-3.6.0.min.js"
           strategy="afterInteractive"
@@ -40,7 +44,6 @@ export default function RootLayout({ children }) {
         />
         {/* <!-- plugins --> */}
         <Script src="/asserts/js/plugins.js" strategy="afterInteractive" />
-
         {/* <!-- GSAP --> */}
         <Script src="/asserts/js/gsap.min.js" strategy="afterInteractive" />
         <Script
@@ -61,10 +64,6 @@ export default function RootLayout({ children }) {
           strategy="afterInteractive"
         />
         <Script src="/asserts/js/scripts.js" strategy="afterInteractive" />
-      </head>
-
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
       </body>
     </html>
   );
