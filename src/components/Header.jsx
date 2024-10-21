@@ -28,9 +28,9 @@ const Header = () => {
             <ul className="navbar-nav">
               {headerData.map((data, index) => (
                 <li className="nav-item" key={index}>
-                  <Link  className={`nav-link ${pathName === data.url ? "active" : ""}`} href={data.url}>
+                  <a  className={`nav-link ${pathName === data.url ? "active" : ""}`} href={data.url}>
                     {data.name} 
-                  </Link>
+                  </a>
                 </li>
               ))}
               {/* <li className="nav-item">
