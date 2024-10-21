@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import LoadingScreen from "@/components/LoadingScreen";
 import Progress from "@/components/Progress";
 import Image from "next/image";
+import Script from "next/script";
 // import styles from "./page.module.css";
 // import '../../public/asserts/js/scripts.js'
 // import { useEffect } from "react";
@@ -59,6 +60,10 @@ export default function Home() {
   // },[])
   return (
     <>
+     <Script
+        src="/asserts/js/scripts.js"
+        strategy="lazyOnload" // or "lazyOnload", "beforeInteractive" based on need
+      />
       {/* <!-- ==================== Start Loading ==================== --> */}
       <LoadingScreen />
       {/* <!-- ==================== End Loading ==================== --> */}

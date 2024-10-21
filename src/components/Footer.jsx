@@ -1,7 +1,11 @@
+"use client";
 import React from "react";
 import CustomImage from "./CustomImage";
+import { headerData } from "@/utility/data";
+import { usePathname } from "next/navigation";
 
 const Footer = () => {
+  const pathName = usePathname();
   return (
     <footer className="footer-sa bord-thin-top-light pb-80">
       <div className="container section-padding">
@@ -74,12 +78,21 @@ const Footer = () => {
             </div>
             <div className="col-lg-4 d-flex justify-content-end">
               <div className="links sub-color d-flex justify-content-between">
-                <a href="#" className="active">
+                {headerData.map((data, index) => (
+                  <a
+                    key={index}
+                    className={`${pathName === data.url ? "active" : ""}`}
+                    href={data.url}
+                  >
+                    {data.name}
+                  </a>
+                ))}
+                {/* <a href="#" className="active">
                   Home
                 </a>
                 <a href="../inner_pages/portfolio-standard.html">Works</a>
                 <a href="../inner_pages/about.html">Studio</a>
-                <a href="../inner_pages/blog-standard.html">News</a>
+                <a href="../inner_pages/blog-standard.html">News</a> */}
               </div>
             </div>
           </div>

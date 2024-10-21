@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
         <link rel="stylesheet" href="/asserts/css/plugins.css" />
         <link rel="stylesheet" href="/asserts/css/common_style.css" />
         <link rel="stylesheet" href="/asserts/css/home1-style.css" />
-        <link rel="stylesheet" href="/asserts/css/inner_pages.css" />
+        {/* <link rel="stylesheet" href="/asserts/css/inner_pages.css" /> */}
       </head>
 
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
@@ -68,7 +68,7 @@ export default function RootLayout({ children }) {
           src="/asserts/js/common_scripts.js"
           strategy="afterInteractive"
         />
-        <Script src="/asserts/js/scripts.js" strategy="afterInteractive" />
+        {/* <Script src="/asserts/js/scripts.js" strategy="afterInteractive" /> */}
       </body>
     </html>
   );

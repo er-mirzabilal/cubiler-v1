@@ -4,13 +4,8 @@ import React from "react";
 import CustomImage from "./CustomImage";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import { headerData } from "@/utility/data";
 
-const headerData = [
-  { id: "1", name: "Home", url: "/" },
-  { id: "2", name: "Studio", url: "/studio" },
-  { id: "3", name: "Works", url: "/works" },
-  { id: "4", name: "News", url: "/news" },
-];
 
 const Header = () => {
     const pathName = usePathname();
@@ -54,7 +49,7 @@ const Header = () => {
             </ul>
           </div>
           <div className="topnav d-flex align-items-center">
-            <a href="../inner_pages/contact.html" className="butn butn-rounded">
+            <a href="/start-project" className="butn butn-rounded">
               <div className="d-flex align-items-center">
                 <span>Start Project</span>
                 <span className="icon ml-10">

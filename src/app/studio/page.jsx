@@ -1,13 +1,22 @@
+"use client";
 import CustomImage from "@/components/CustomImage";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import InnerPage from "@/components/InnerPage";
 import LoadingScreen from "@/components/LoadingScreen";
 import Progress from "@/components/Progress";
-import React from "react";
+import Head from "next/head";
+import React, { useEffect } from "react";
 
 const page = () => {
   return (
     <>
+    {/* <!-- ==================== Loading css ==================== --> */}
+      <InnerPage />
+      <Head>
+        <link rel="stylesheet" href="/asserts/css/inner_pages.css" />
+      </Head>
+
       {/* <!-- ==================== Start Loading ==================== --> */}
       <LoadingScreen />
       {/* <!-- ==================== End Loading ==================== --> */}
@@ -119,8 +128,8 @@ const page = () => {
                   </div>
                 </div>
                 <div className="fit-img radius-15">
-                   {/* <img src="/asserts/images/studio/1.jpg" alt="" /> */}
-                   <CustomImage src="/asserts/images/studio/1.jpg" alt="" />
+                  {/* <img src="/asserts/images/studio/1.jpg" alt="" /> */}
+                  <CustomImage src="/asserts/images/studio/1.jpg" alt="" />
                 </div>
               </div>
             </header>
@@ -153,8 +162,11 @@ const page = () => {
                             <div className="d-flex">
                               <span className="text">Learn More</span>
                               <span className="icon">
-                                 {/* <img src="/asserts/images/studio/arrow-top-right.svg" alt="" /> */}
-                                 <CustomImage src="/asserts/images/studio/arrow-top-right.svg" alt="" />
+                                {/* <img src="/asserts/images/studio/arrow-top-right.svg" alt="" /> */}
+                                <CustomImage
+                                  src="/asserts/images/studio/arrow-top-right.svg"
+                                  alt=""
+                                />
                               </span>
                             </div>
                           </a>
@@ -176,8 +188,11 @@ const page = () => {
                             </p>
                             <div>
                               <div className="icon invert">
-                                 {/* <img src="/asserts/images/studio/crown-solid.svg" alt="" /> */}
-                                 <CustomImage src="/asserts/images/studio/crown-solid.svg" alt="" />
+                                {/* <img src="/asserts/images/studio/crown-solid.svg" alt="" /> */}
+                                <CustomImage
+                                  src="/asserts/images/studio/crown-solid.svg"
+                                  alt=""
+                                />
                               </div>
                             </div>
                           </div>
@@ -220,8 +235,11 @@ const page = () => {
                             </p>
                             <div>
                               <div className="icon invert">
-                                 <CustomImage src="/asserts/images/studio/code-solid.svg" alt="" />
-                                 {/* <img src="/asserts/images/studio/code-solid.svg" alt="" /> */}
+                                <CustomImage
+                                  src="/asserts/images/studio/code-solid.svg"
+                                  alt=""
+                                />
+                                {/* <img src="/asserts/images/studio/code-solid.svg" alt="" /> */}
                               </div>
                             </div>
                           </div>
@@ -239,8 +257,11 @@ const page = () => {
                             </p>
                             <div>
                               <div className="icon invert">
-                                 <CustomImage src="/asserts/images/studio/chart-line-solid.svg" alt="" />
-                                 {/* <img src="/asserts/images/studio/chart-line-solid.svg" alt="" /> */}
+                                <CustomImage
+                                  src="/asserts/images/studio/chart-line-solid.svg"
+                                  alt=""
+                                />
+                                {/* <img src="/asserts/images/studio/chart-line-solid.svg" alt="" /> */}
                               </div>
                             </div>
                           </div>
@@ -262,8 +283,11 @@ const page = () => {
                   <div className="col-lg-5">
                     <div className="img-box">
                       <div className="img fit-img">
-                         {/* <img src="/asserts/images/studio/intro1.jpg" alt="" /> */}
-                         <CustomImage src="/asserts/images/studio/intro1.jpg" alt="" />
+                        {/* <img src="/asserts/images/studio/intro1.jpg" alt="" /> */}
+                        <CustomImage
+                          src="/asserts/images/studio/intro1.jpg"
+                          alt=""
+                        />
                       </div>
                       <div className="states">
                         <h2 className="mb-10 fw-600">7k+</h2>
@@ -301,7 +325,10 @@ const page = () => {
                       </div>
                       <div className="butn-vid d-flex align-items-center">
                         <div className="play-button">
-                          <a href="https://youtu.be/AzwC6umvd1s" className="vid">
+                          <a
+                            href="https://youtu.be/AzwC6umvd1s"
+                            className="vid"
+                          >
                             <i className="fas fa-play"></i>
                           </a>
                         </div>
@@ -428,8 +455,11 @@ const page = () => {
                   </div>
                   <div className="item" data-tp-throwable-el="">
                     <div className="icon1">
-                       {/* <img src="/asserts/images/studio/s-icon1.svg" alt="" /> */}
-                       <CustomImage src="/asserts/images/studio/s-icon1.svg" alt="" />
+                      {/* <img src="/asserts/images/studio/s-icon1.svg" alt="" /> */}
+                      <CustomImage
+                        src="/asserts/images/studio/s-icon1.svg"
+                        alt=""
+                      />
                     </div>
                   </div>
                   <div className="item" data-tp-throwable-el="">
@@ -439,8 +469,11 @@ const page = () => {
                   </div>
                   <div className="item" data-tp-throwable-el="">
                     <div className="">
-                       <CustomImage src="/asserts/images/studio/s-icon2.svg" alt="" />
-                       {/* <img src="/asserts/images/studio/s-icon2.svg" alt="" /> */}
+                      <CustomImage
+                        src="/asserts/images/studio/s-icon2.svg"
+                        alt=""
+                      />
+                      {/* <img src="/asserts/images/studio/s-icon2.svg" alt="" /> */}
                     </div>
                   </div>
                   <div className="item" data-tp-throwable-el="">
@@ -477,8 +510,11 @@ const page = () => {
                   <div className="d-flex">
                     <div>
                       <div className="img fit-img">
-                         {/* <img src="/asserts/images/studio/1.png" alt="" /> */}
-                         <CustomImage src="/asserts/images/studio/1.png" alt="" />
+                        {/* <img src="/asserts/images/studio/1.png" alt="" /> */}
+                        <CustomImage
+                          src="/asserts/images/studio/1.png"
+                          alt=""
+                        />
                       </div>
                     </div>
                     <div className="cont">
@@ -507,8 +543,11 @@ const page = () => {
                   <div className="d-flex">
                     <div>
                       <div className="img fit-img">
-                         {/* <img src="/asserts/images/studio/2.png" alt="" /> */}
-                         <CustomImage src="/asserts/images/studio/2.png" alt="" />
+                        {/* <img src="/asserts/images/studio/2.png" alt="" /> */}
+                        <CustomImage
+                          src="/asserts/images/studio/2.png"
+                          alt=""
+                        />
                       </div>
                     </div>
                     <div className="cont">
@@ -531,8 +570,11 @@ const page = () => {
                   <div className="d-flex">
                     <div>
                       <div className="img fit-img">
-                         {/* <img src="/asserts/images/studio/3.png" alt="" /> */}
-                         <CustomImage src="/asserts/images/studio/3.png" alt="" />
+                        {/* <img src="/asserts/images/studio/3.png" alt="" /> */}
+                        <CustomImage
+                          src="/asserts/images/studio/3.png"
+                          alt=""
+                        />
                       </div>
                     </div>
                     <div className="cont">
@@ -558,8 +600,11 @@ const page = () => {
                   <div className="d-flex">
                     <div>
                       <div className="img fit-img">
-                         <CustomImage src="/asserts/images/studio/4.png" alt="" />
-                         {/* <img src="/asserts/images/studio/4.png" alt="" /> */}
+                        <CustomImage
+                          src="/asserts/images/studio/4.png"
+                          alt=""
+                        />
+                        {/* <img src="/asserts/images/studio/4.png" alt="" /> */}
                       </div>
                     </div>
                     <div className="cont">
@@ -598,12 +643,18 @@ const page = () => {
                       <div className="col-lg-5">
                         <div className="qoute-icon md-mb50">
                           <div className="text">
-                             {/* <img src="/asserts/images/studio/Vector_Cricle_Text.svg" alt="" /> */}
-                             <CustomImage src="/asserts/images/studio/Vector_Cricle_Text.svg" alt="" />
+                            {/* <img src="/asserts/images/studio/Vector_Cricle_Text.svg" alt="" /> */}
+                            <CustomImage
+                              src="/asserts/images/studio/Vector_Cricle_Text.svg"
+                              alt=""
+                            />
                           </div>
                           <div className="icon">
-                             <CustomImage src="/asserts/images/studio/vector_quote.svg" alt="" />
-                             {/* <img src="/asserts/images/studio/vector_quote.svg" alt="" /> */}
+                            <CustomImage
+                              src="/asserts/images/studio/vector_quote.svg"
+                              alt=""
+                            />
+                            {/* <img src="/asserts/images/studio/vector_quote.svg" alt="" /> */}
                           </div>
                         </div>
                       </div>
@@ -624,8 +675,11 @@ const page = () => {
                                 <div className="info d-flex align-items-center mt-40 pt-30 bord-thin-top-light">
                                   <div>
                                     <div className="img-author">
-                                       <CustomImage src="/asserts/images/studio/avatar1.jpg" alt="" />
-                                       {/* <img src="/asserts/images/studio/avatar1.jpg" alt="" /> */}
+                                      <CustomImage
+                                        src="/asserts/images/studio/avatar1.jpg"
+                                        alt=""
+                                      />
+                                      {/* <img src="/asserts/images/studio/avatar1.jpg" alt="" /> */}
                                     </div>
                                   </div>
                                   <div className="info-text">
@@ -649,8 +703,11 @@ const page = () => {
                                 <div className="info d-flex align-items-center mt-40 pt-30 bord-thin-top-light">
                                   <div>
                                     <div className="img-author">
-                                       {/* <img src="/asserts/images/studio/avatar2.jpg" alt="" /> */}
-                                       <CustomImage src="/asserts/images/studio/avatar2.jpg" alt="" />
+                                      {/* <img src="/asserts/images/studio/avatar2.jpg" alt="" /> */}
+                                      <CustomImage
+                                        src="/asserts/images/studio/avatar2.jpg"
+                                        alt=""
+                                      />
                                     </div>
                                   </div>
                                   <div className="info-text">
@@ -674,8 +731,11 @@ const page = () => {
                                 <div className="info d-flex align-items-center mt-40 pt-30 bord-thin-top-light">
                                   <div>
                                     <div className="img-author">
-                                       {/* <img src="/asserts/images/studio/avatar3.jpg" alt="" /> */}
-                                       <CustomImage src="/asserts/images/studio/avatar3.jpg" alt="" />
+                                      {/* <img src="/asserts/images/studio/avatar3.jpg" alt="" /> */}
+                                      <CustomImage
+                                        src="/asserts/images/studio/avatar3.jpg"
+                                        alt=""
+                                      />
                                     </div>
                                   </div>
                                   <div className="info-text">
@@ -706,40 +766,55 @@ const page = () => {
                       <div className="col-lg col-md-4 col-6 md-mb30">
                         <div className="item d-flex align-items-center justify-content-center">
                           <div className="img">
-                             <CustomImage src="/asserts/images/studio/1.svg" alt="" />
-                             {/* <img src="/asserts/images/studio/1.svg" alt="" /> */}
+                            <CustomImage
+                              src="/asserts/images/studio/1.svg"
+                              alt=""
+                            />
+                            {/* <img src="/asserts/images/studio/1.svg" alt="" /> */}
                           </div>
                         </div>
                       </div>
                       <div className="col-lg col-md-4 col-6 md-mb30">
                         <div className="item d-flex align-items-center justify-content-center">
                           <div className="img">
-                             <CustomImage src="/asserts/images/studio/2.svg" alt="" />
-                             {/* <img src="/asserts/images/studio/2.svg" alt="" /> */}
+                            <CustomImage
+                              src="/asserts/images/studio/2.svg"
+                              alt=""
+                            />
+                            {/* <img src="/asserts/images/studio/2.svg" alt="" /> */}
                           </div>
                         </div>
                       </div>
                       <div className="col-lg col-md-4 col-6 md-mb30">
                         <div className="item d-flex align-items-center justify-content-center">
                           <div className="img">
-                             <CustomImage src="/asserts/images/studio/3.svg" alt="" />
-                             {/* <img src="/asserts/images/studio/3.svg" alt="" /> */}
+                            <CustomImage
+                              src="/asserts/images/studio/3.svg"
+                              alt=""
+                            />
+                            {/* <img src="/asserts/images/studio/3.svg" alt="" /> */}
                           </div>
                         </div>
                       </div>
                       <div className="col-lg col-md-4 col-6 sm-mb30">
                         <div className="item d-flex align-items-center justify-content-center">
                           <div className="img">
-                             <CustomImage src="/asserts/images/studio/4.svg" alt="" />
-                             {/* <img src="/asserts/images/studio/4.svg" alt="" /> */}
+                            <CustomImage
+                              src="/asserts/images/studio/4.svg"
+                              alt=""
+                            />
+                            {/* <img src="/asserts/images/studio/4.svg" alt="" /> */}
                           </div>
                         </div>
                       </div>
                       <div className="col-lg col-md-4 col-6">
                         <div className="item d-flex align-items-center justify-content-center">
                           <div className="img">
-                             <CustomImage src="/asserts/images/studio/5.svg" alt="" />
-                             {/* <img src="/asserts/images/studio/5.svg" alt="" /> */}
+                            <CustomImage
+                              src="/asserts/images/studio/5.svg"
+                              alt=""
+                            />
+                            {/* <img src="/asserts/images/studio/5.svg" alt="" /> */}
                           </div>
                         </div>
                       </div>
@@ -756,7 +831,7 @@ const page = () => {
 
           {/* <!-- ==================== Start Footer ==================== --> */}
 
-          <Footer/>
+          <Footer />
 
           {/* <!-- ==================== End Footer ==================== --> */}
         </div>
