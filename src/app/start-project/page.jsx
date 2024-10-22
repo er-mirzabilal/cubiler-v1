@@ -33,14 +33,14 @@ const StartProject = () => {
           <main>
             {/* <!-- ==================== Start Header ==================== --> */}
 
-            <header class="contact-hed section-padding pb-0">
-              <div class="container">
-                <div class="caption mb-80 text-center">
+            <header className="contact-hed section-padding pb-0">
+              <div className="container">
+                <div className="caption mb-80 text-center">
                   <h1 style={{ lineHeight: 1.2 }}>Get In Touch</h1>
                 </div>
               </div>
-              <div class="container-fluid">
-                <div class="google-map">
+              <div className="container-fluid">
+                <div className="google-map">
                   {/* <iframe
                     id="gmap_canvas"
                     src="https://maps.google.com/maps?q=hollwood&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
@@ -57,69 +57,69 @@ const StartProject = () => {
 
             {/* <!-- ==================== Start Contact ==================== --> */}
 
-            <section class="contact-pg section-padding">
-              <div class="container">
-                <div class="row">
-                  <div class="col-lg-5 valign">
-                    <div class="full-width md-mb80">
-                      <div class="sec-head md-mb80">
-                        <h2 class="text-u">
+            <section className="contact-pg section-padding">
+              <div className="container">
+                <div className="row">
+                  <div className="col-lg-5 valign">
+                    <div className="full-width md-mb80">
+                      <div className="sec-head md-mb80">
+                        <h2 className="text-u">
                           Let&apos;s make your <br /> brand{" "}
-                          <span class="fw-200">brilliant!</span>
+                          <span className="fw-200">brilliant!</span>
                         </h2>
-                        <p class="mt-20 mb-20">
+                        <p className="mt-20 mb-20">
                           If you would like to work with us or just want to get
                           in touch, we’d love to hear from you!
                         </p>
-                        <div class="row">
-                          <div class="col-md-6">
-                            <div class="morinfo mt-30">
-                              <h6 class="mb-15">Address</h6>
+                        <div className="row">
+                          <div className="col-md-6">
+                            <div className="morinfo mt-30">
+                              <h6 className="mb-15">Address</h6>
                               <p>
                                 Besòs 1, 08174 Sant Cugat del Vallès, Barcelona
                               </p>
                             </div>
                           </div>
-                          <div class="col-md-6">
-                            <div class="morinfo mt-30">
-                              <h6 class="mb-15">Email</h6>
+                          <div className="col-md-6">
+                            <div className="morinfo mt-30">
+                              <h6 className="mb-15">Email</h6>
                               <p>Support@uithemez.com</p>
                             </div>
                           </div>
                         </div>
-                        <div class="phone fz-30 fw-600 mt-30 underline main-color">
+                        <div className="phone fz-30 fw-600 mt-30 underline main-color">
                           <a href="#0">+1 840 841 25 69</a>
                         </div>
                       </div>
-                      <ul class="rest social-text d-flex mt-60 fz-16">
-                        <li class="mr-30">
-                          <a href="#0" class="hover-this">
-                            <span class="hover-anim">Facebook</span>
+                      <ul className="rest social-text d-flex mt-60 fz-16">
+                        <li className="mr-30">
+                          <a href="#0" className="hover-this">
+                            <span className="hover-anim">Facebook</span>
                           </a>
                         </li>
-                        <li class="mr-30">
-                          <a href="#0" class="hover-this">
-                            <span class="hover-anim">Twitter</span>
+                        <li className="mr-30">
+                          <a href="#0" className="hover-this">
+                            <span className="hover-anim">Twitter</span>
                           </a>
                         </li>
-                        <li class="mr-30">
-                          <a href="#0" class="hover-this">
-                            <span class="hover-anim">LinkedIn</span>
+                        <li className="mr-30">
+                          <a href="#0" className="hover-this">
+                            <span className="hover-anim">LinkedIn</span>
                           </a>
                         </li>
                         <li>
-                          <a href="#0" class="hover-this">
-                            <span class="hover-anim">Instagram</span>
+                          <a href="#0" className="hover-this">
+                            <span className="hover-anim">Instagram</span>
                           </a>
                         </li>
                       </ul>
                     </div>
                   </div>
-                  <div class="col-lg-6 offset-lg-1 valign">
-                    <div class="full-width">
-                      <div class="sec-head mb-50">
-                        <h6 class="sub-head">
-                          Send a <span class="fw-200">message</span>
+                  <div className="col-lg-6 offset-lg-1 valign">
+                    <div className="full-width">
+                      <div className="sec-head mb-50">
+                        <h6 className="sub-head">
+                          Send a <span className="fw-200">message</span>
                         </h6>
                       </div>
                       <form
@@ -127,11 +127,11 @@ const StartProject = () => {
                         method="post"
                         action="contact.php"
                       >
-                        <div class="messages"></div>
+                        <div className="messages"></div>
 
-                        <div class="controls row">
-                          <div class="col-lg-6">
-                            <div class="form-group mb-30">
+                        <div className="controls row">
+                          <div className="col-lg-6">
+                            <div className="form-group mb-30">
                               <input
                                 id="form_name"
                                 type="text"
@@ -142,8 +142,8 @@ const StartProject = () => {
                             </div>
                           </div>
 
-                          <div class="col-lg-6">
-                            <div class="form-group mb-30">
+                          <div className="col-lg-6">
+                            <div className="form-group mb-30">
                               <input
                                 id="form_email"
                                 type="email"
@@ -154,8 +154,8 @@ const StartProject = () => {
                             </div>
                           </div>
 
-                          <div class="col-12">
-                            <div class="form-group mb-30">
+                          <div className="col-12">
+                            <div className="form-group mb-30">
                               <input
                                 id="form_subject"
                                 type="text"
@@ -165,8 +165,8 @@ const StartProject = () => {
                             </div>
                           </div>
 
-                          <div class="col-12">
-                            <div class="form-group">
+                          <div className="col-12">
+                            <div className="form-group">
                               <textarea
                                 id="form_message"
                                 name="message"
@@ -175,20 +175,20 @@ const StartProject = () => {
                                 required="required"
                               ></textarea>
                             </div>
-                            <div class="mt-30">
+                            <div className="mt-30">
                               <button
                                 type="submit"
-                                class="butn butn-md butn-bord butn-rounded"
+                                className="butn butn-md butn-bord butn-rounded"
                               >
-                                <div class="d-flex align-items-center">
+                                <div className="d-flex align-items-center">
                                   <span>Let&apos;s Talking</span>
-                                  <span class="icon ml-10">
+                                  <span className="icon ml-10">
                                     {/* <img
                                       src="images/arrow-top-right.svg"
                                       alt=""
                                     /> */}
                                     <CustomImage
-                                      src="images/arrow-top-right.svg"
+                                      src="/asserts/images/arrow-top-right.svg"
                                       alt=""
                                     />
                                   </span>

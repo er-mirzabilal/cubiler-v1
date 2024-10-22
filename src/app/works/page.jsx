@@ -35,18 +35,18 @@ const page = () => {
           <main>
             {/* <!-- ==================== Start Header ==================== --> */}
 
-            <header class="work-hed">
-              <div class="container section-padding">
-                <div class="caption text-center">
+            <header className="work-hed">
+              <div className="container section-padding">
+                <div className="caption text-center">
                   <h1>Work Card</h1>
-                  <div class="path mt-15">
+                  <div className="path mt-15">
                     <span>
                       <a href="#">Home</a>
                     </span>
                     <span>
-                      <i class="fa-solid fa-arrow-right-long"></i>
+                      <i className="fa-solid fa-arrow-right-long"></i>
                     </span>
-                    <span class="main-color">Portfolio</span>
+                    <span className="main-color">Portfolio</span>
                   </div>
                 </div>
               </div>
@@ -56,53 +56,53 @@ const page = () => {
 
             {/* <!-- ==================== Start Portfolio ==================== --> */}
 
-            <section class="work-card section-padding pt-0">
-              <div class="container-xxl">
-                <div class="cards">
-                  <div class="card-item">
-                    <div class="img fit-img">
+            <section className="work-card section-padding pt-0">
+              <div className="container-xxl">
+                <div className="cards">
+                  <div className="card-item">
+                    <div className="img fit-img">
                       <CustomImage src="/asserts/images/works/1.jpg" alt="" />
                       {/* <img src="/asserts/images/works/1.jpg" alt="" /> */}
-                      <div class="tags">
+                      <div className="tags">
                         <a href="#0">Development</a>
                         <a href="#0">UI/UX</a>
                         <a href="#0">illustration</a>
                       </div>
-                      <h5 class="bottom">Unerio Residential</h5>
+                      <h5 className="bottom">Unerio Residential</h5>
                     </div>
                   </div>
-                  <div class="card-item">
-                    <div class="img fit-img">
+                  <div className="card-item">
+                    <div className="img fit-img">
                       <CustomImage src="/asserts/images/works/2.jpg" alt="" />
                       {/* <img src="/asserts/images/works/2.jpg" alt="" /> */}
-                      <div class="tags">
+                      <div className="tags">
                         <a href="#0">Mobile Responsive</a>
                         <a href="#0">UX Design</a>
                       </div>
                       <h5>Archin Studio</h5>
                     </div>
                   </div>
-                  <div class="card-item">
-                    <div class="img fit-img">
+                  <div className="card-item">
+                    <div className="img fit-img">
                       <CustomImage src="/asserts/images/works/3.jpg" alt="" />
                       {/* <img src="/asserts/images/works/3.jpg" alt="" /> */}
-                      <div class="tags">
+                      <div className="tags">
                         <a href="#0">UI/UX</a>
                         <a href="#0">Webflow</a>
                       </div>
                       <h5>Jorger Clarkson</h5>
                     </div>
                   </div>
-                  <div class="card-item">
-                    <div class="img fit-img">
+                  <div className="card-item">
+                    <div className="img fit-img">
                       <CustomImage src="/asserts/images/works/4.jpg" alt="" />
                       {/* <img src="/asserts/images/works/4.jpg" alt="" /> */}
-                      <div class="tags">
+                      <div className="tags">
                         <a href="#0">Development</a>
                         <a href="#0">UI/UX</a>
                         <a href="#0">illustration</a>
                       </div>
-                      <h5 class="bottom left">DS Freelance</h5>
+                      <h5 className="bottom left">DS Freelance</h5>
                     </div>
                   </div>
                 </div>
